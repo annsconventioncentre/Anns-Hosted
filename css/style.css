@@ -7251,3 +7251,14 @@ button.mfp-arrow {
 .our-story{
   padding: 30px 10px;
 }
+
+
+
+/* contact-page */
+.contact-hover{
+  color: rgb(164, 163, 163);
+}
+
+.contact-hover:hover{
+  color: rgb(255, 255, 255);
+}
