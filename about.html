@@ -14,7 +14,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="css/responsive.css" rel="stylesheet">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
 
 </head>
 
@@ -164,7 +163,7 @@
                     <a href="https://www.instagram.com/annsconventioncentre/?igsh=MWJ3M3h0eHE4ZDNzbw%3D%3D" class="fa fa-instagram" style="background-color: #125688;"></a>
                     <a href="https://www.facebook.com/annsauditorium" class="fa fa-facebook" style="background-color: #4267B2;"></a>
                     <a href="https://api.whatsapp.com/send/?phone=9961019000&text=I%27m+interested+in+booking+auditorium&type=phone_number&app_absent=0" class="fa fa-whatsapp" style="background-color: #00d084;"></a>
-                    <a href="https://youtu.be/pthg_4wxoTo" class="fa fa-youtube" style="background-color: #b00101;"></a>
+                    <a href="https://youtube.com/@AnnsConventionCentre" class="fa fa-youtube" style="background-color: #b00101;"></a>
                 </div>
             </div><!-- /.Side-menu -->
             
@@ -207,7 +206,7 @@
                 <a href="https://www.instagram.com/annsconventioncentre/?igsh=MWJ3M3h0eHE4ZDNzbw%3D%3D" class="fa fa-instagram" style="background-color: #125688;"></a>
                 <a href="https://www.facebook.com/annsauditorium" class="fa fa-facebook" style="background-color: #4267B2;"></a>
                 <a href="https://api.whatsapp.com/send/?phone=9961019000&text=I%27m+interested+in+booking+auditorium&type=phone_number&app_absent=0" class="fa fa-whatsapp" style="background-color: #00d084;"></a>
-                <a href="https://youtu.be/pthg_4wxoTo" class="fa fa-youtube" style="background-color: #b00101;"></a>
+                <a href="https://youtube.com/@AnnsConventionCentre" class="fa fa-youtube" style="background-color: #b00101;"></a>
             </div>
         </div><!-- /.Side-menu -->
         </div>
@@ -244,8 +243,8 @@
                         <div class="text">Welcome to Anns Convention Centre, where we turn ordinary events into extraordinary experiences. Nestled in the heart of Kerala, our convention center stands as a beacon of elegance and hospitality, providing a premier venue for weddings, receptions, engagement functions, birthday parties, and other special occasions. </div>
                         <div class="author">Mr. Shaji P John - founder</div>
                         <div class="video-box">
-                            <div class="image"><a href="https://youtu.be/pthg_4wxoTo?si=uZTbHXgo9-miDy19" class="lightbox-image"><img src="img/about/about-image-1.jpg" alt=""></a>
-                            <a href="https://youtu.be/pthg_4wxoTo?si=uZTbHXgo9-miDy19" class="lightbox-image play-btn"><span class="icon fal fa-play"><i class="ripple"></i></span></a></div>
+                            <div class="image"><a href="https://youtube.com/@AnnsConventionCentre?si=uZTbHXgo9-miDy19" class="lightbox-image"><img src="img/about/about-image-1.jpg" alt=""></a>
+                            <a href="https://vimeo.com/933617057?share=copy" class="lightbox-image play-btn"><span class="icon fal fa-play"><i class="ripple"></i></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -590,20 +589,20 @@
                                         </div>
                                         <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                             <div class="field-inner">
-                                                <input type="text" name="Phone- Number" value="" placeholder="Phone Number" required>
+                                                <input type="text" name="Phone- Number" maxlength="10" minlength="10" placeholder="Phone Number" required>
                                             </div>
                                         </div>
                                         <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                             <div class="field-inner">
                                                 <span class="alt-icon far fa-calendar"></span>
-                                                <input class="l-icon datepicker" type="text" name="Date" value="" placeholder="DD-MM-YYYY" required readonly>
+                                                <input class="l-icon datepicker" type="text" name="Date" value="" placeholder="DD-MM-YYYY" required >
                                                 <span class="arrow-icon far fa-angle-down"></span>
                                             </div>
                                         </div>
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12">
                                             <div class="field-inner">
                                                 <span class="alt-icon far fa-clock"></span>
-                                                <select class="l-icon" name="time">
+                                                <select class="l-icon" name="Time" required>
                                                     <option>08 : 00 am</option>
                                                     <option>09 : 00 am</option>
                                                     <option>10 : 00 am</option>
@@ -627,7 +626,7 @@
                                             <div class="field-inner">
                                                 <span class="alt-icon far fa-user"></span>
                                                 <select class="l-icon" name="Program" 
-                                                placeholder="Select Program">
+                                                placeholder="Select Program" required>
                                                     <option>Wedding</option>
                                                     <option>Wedding Receptions</option>
                                                     <option>Engagement Functions</option>
@@ -644,7 +643,7 @@
                                             <div class="field-inner">
                                                 <span class="alt-icon far fa-user"></span>
                                                 <select class="l-icon" name="Hall" 
-                                                placeholder="Select Halls">
+                                                placeholder="Select Halls" required>
                                                     <option>Nakshathra Hall</option>
                                                     <option>Shaz Hall</option>
                                                     <option>Vismaya Hall</option>
@@ -655,7 +654,7 @@
                                         </div>
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                             <div class="field-inner">
-                                                <textarea name="fieldname" placeholder="Message" required></textarea>
+                                                <textarea name="Message" placeholder="Message" ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
@@ -694,7 +693,7 @@
                                         <a href="https://www.instagram.com/annsconventioncentre/?igsh=MWJ3M3h0eHE4ZDNzbw%3D%3D" class="fa fa-instagram" style="background-color: #125688;"></a>
                                         <a href="https://www.facebook.com/annsauditorium" class="fa fa-facebook" style="background-color: #4267B2;"></a>
                                         <a href="https://api.whatsapp.com/send/?phone=9961019000&text=I%27m+interested+in+booking+auditorium&type=phone_number&app_absent=0" class="fa fa-whatsapp" style="background-color: #00d084;"></a>
-                                        <a href="https://youtu.be/pthg_4wxoTo" class="fa fa-youtube" style="background-color: #b00101;"></a>
+                                        <a href="https://youtube.com/@AnnsConventionCentre" class="fa fa-youtube" style="background-color: #b00101;"></a>
                                     </div>
                                 </ul>
                             </div>
@@ -733,7 +732,7 @@
                                     <a href="https://www.instagram.com/annsconventioncentre/?igsh=MWJ3M3h0eHE4ZDNzbw%3D%3D" class="fa fa-instagram" style="background-color: #125688;"></a>
                                     <a href="https://www.facebook.com/annsauditorium" class="fa fa-facebook" style="background-color: #4267B2;"></a>
                                     <a href="https://api.whatsapp.com/send/?phone=9961019000&text=I%27m+interested+in+booking+auditorium&type=phone_number&app_absent=0" class="fa fa-whatsapp" style="background-color: #00d084;"></a>
-                                    <a href="https://youtu.be/pthg_4wxoTo" class="fa fa-youtube" style="background-color: #b00101;"></a>
+                                    <a href="https://youtube.com/@AnnsConventionCentre" class="fa fa-youtube" style="background-color: #b00101;"></a>
                                 </div>
                             </div>
                         </div>
@@ -759,7 +758,7 @@
                                 <li><a href="contact-us.html">Contact</a></li>
                                 <li><a href="https://www.facebook.com/annsauditorium">facebook</a></li>
                                 <li><a href="https://api.whatsapp.com/send/?phone=9961019000&text=I%27m+interested+in+booking+auditorium&type=phone_number&app_absent=0">whatsapp</a></li>
-                                <li><a href="https://youtu.be/pthg_4wxoTo">Youtube</a></li>
+                                <li><a href="https://youtube.com/@AnnsConventionCentre">Youtube</a></li>
                                 <li><a href="https://www.google.com/maps/dir//Near+Cyclemukku%2FKadapra+On,+Thiruvalla+-+Kayamkulam+Highway,Kadapra,+Thiruvalla,+Kerala+689626/@9.3345994,76.4520189,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b06217697aab0ad:0xbe7ef08c9ffcae54!2m2!1d76.5344208!2d9.3346089?entry=ttu">Google map</a></li>
                             </ul>
                         </div>
