@@ -49,7 +49,7 @@ if($('.main-header').length){
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
 		if($('.loader-wrap').length){
-			$('.loader-wrap').delay(1000).fadeOut(500);
+			$('.loader-wrap').delay(2000).fadeOut(500);
 		}
 	}
 
