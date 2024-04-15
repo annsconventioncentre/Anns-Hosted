@@ -28,6 +28,7 @@
 24. Preloader
 25. Contact Form
 26. Slider Grid Background
+27. form spree
 
 ------------------------------------------------------- */
 $(function () {
@@ -717,3 +718,34 @@ var form = $('.contact__form'),
         }
     });
     
+
+    //submitting online booking
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+    
+        // Collect form data
+        let formData = new FormData(this);
+    
+        // Send the form data using XMLHttpRequest
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", this.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    document.getElementById("contactForm").reset();
+                    const successMessage = document.getElementById('success-parent-div');
+                    successMessage.style.display = 'flex'; // Show the success message
+                
+                    setTimeout(function() {
+                      successMessage.style.display = 'none'; // Hide the success message after 5 seconds
+                    }, 8000); // 5000 milliseconds = 5 seconds
+                } else {
+                    // Error message
+                    console.log('message is not sent');
+                }
+            }
+        };
+        xhr.send(formData);
+    });

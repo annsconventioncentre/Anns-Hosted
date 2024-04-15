@@ -7517,8 +7517,24 @@ button.mfp-arrow {
   padding: 12px 0px;
 }
 
-/* facebook video gallery */
-/* 
-._4-u2{
-  border:  2px solid red !important;
-}  */
+/* success message */
+
+#success-parent-div{
+  display: none;
+  justify-content: center;
+}
+
+.success-message {
+  background-color: #007f1f;
+  color: #fff;
+  padding: 62px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+  padding: 18px 50px;
+  font-size: medium;
+  font-weight: 600;
+}
+.success-message >p{
+  margin-bottom: 0px;
+}
