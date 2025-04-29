@@ -7538,3 +7538,47 @@ button.mfp-arrow {
 .success-message >p{
   margin-bottom: 0px;
 }
+.title-for-event {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #132068, #0085ff, #EA1B23, #196BC3, #118AB2, #0D6ED0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#description-malayalam{
+  display: none;
+}
+.description-button{
+  display: inline-block;
+  vertical-align: top;
+  font-size: var(--font-12);
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  padding-bottom: 4px;
+}
+.description-button::before{
+  position: absolute;
+  content: '';
+  left: 5px;
+  right: 5px;
+  bottom: -4px;
+  height: 4px;
+  opacity: 0;
+  transform: scale(0.2,1);
+  -webkit-transition:
+all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition:
+all 500ms ease;
+  border-bottom: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color);
+}
+.description-button:hover{
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
