@@ -7582,3 +7582,50 @@ all 500ms ease;
   color: var(--white-color);
   border-color: var(--white-color);
 }
+
+/* notification */
+.notification {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #ffffff00;
+  z-index: 1000;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-content {
+  position: relative;
+  text-align: center;
+}
+
+.notification img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.notification-link {
+  display: block;
+  text-decoration: none;
+  color: #007bff;
+  background-color: white;
+  padding-right: 30px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 18px;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  color: #000000;
+  line-height: 26px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 700;
+}

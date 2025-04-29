@@ -18,12 +18,17 @@
 <link href="css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-
 </head>
 
 <body>
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <span id="close-icon" class="close-icon">X</span>
+            <img src="img/events/swaragangha-poster.jpeg" alt="Notification Image" class="notification-image">
+            <a href="event-swaragangha-violin-magical-show-adoor-2025.html" class="text-center notification-link">Read More</a>
+        </div>
+    </div>
+    
   <div class="page-wrapper"> 
   
     <!-- Preloader -->
@@ -1290,5 +1295,38 @@
         });
     });
 </Script>
+<script>
+    window.onload = function() {
+    // Get today's date in a format that can be used as a key
+    const today = new Date().toISOString().split('T')[0]; // 'yyyy-mm-dd'
+
+    // Check if the notification was shown today
+    if (localStorage.getItem('notificationShown') !== today) {
+        // Show the notification
+        const notification = document.getElementById('notification');
+        notification.style.display = 'flex';
+
+        // Set the localStorage to mark the notification as shown today
+        localStorage.setItem('notificationShown', today);
+
+        // Hide the notification after 15 seconds
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 15000);
+    }else{
+        const notification = document.getElementById('notification');
+        notification.style.display = 'none';
+        
+    }
+
+    // Close the notification when the close icon is clicked
+    const closeIcon = document.getElementById('close-icon');
+    closeIcon.addEventListener('click', () => {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'none';
+    });
+};
+
+</script>
 </body>
 </html>
