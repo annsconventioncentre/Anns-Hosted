@@ -39,6 +39,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="css/responsive.css" rel="stylesheet">
 
+<style>
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        transition: transform 0.2s ease;
+    }
+
+    .play-button:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+        color: #ff0000;
+    }
+</style>
+
 </head>
 
 <body>
@@ -337,7 +355,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="m-3" src="img/events/SwaraGanga-poster.jpeg" width="100%" alt="">
+                    <div class="position-relative d-inline-block w-100">
+                        <img class="m-3 w-100" src="img/events/SwaraGanga-poster.jpeg" alt="Event Poster">
+
+                        <!-- Play button -->
+                        <a href="https://youtube.com/shorts/437m6OEc8bs?si=feCKiUFq8gTMn7c2" class="play-button" target="_blank">
+                            <i class="fas fa-play-circle"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             
